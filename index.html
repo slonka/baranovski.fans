@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baranovski - Oficjalna Strona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(to bottom, #d1e8f2, #f7d9c4);
+            color: #0f3d3e;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+        nav {
+            background-color: #0f3d3e;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 1200px;
+        }
+        .about, .music, .concerts, .gallery, .contact {
+            border-bottom: 2px solid #0f3d3e;
+            margin-bottom: 20px;
+        }
+        .about p, .music p, .concerts p {
+            line-height: 1.6;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        table th {
+            background-color: #0f3d3e;
+            color: white;
+        }
+        footer {
+            background-color: #0f3d3e;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Baranovski</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#music">Muzyka</a></li>
+            <li><a href="#concerts">Koncerty</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="about">
+        <h2>O nas</h2>
+        <p>Baranovski to zespół, który łączy indie-pop z emocjonalnym tekstem i unikalną energią sceniczną. Zespół zyskał rozpoznawalność dzięki hitom, które szturmem zdobyły listy przebojów.</p>
+    </section>
+
+    <section id="music" class="music">
+        <h2>Muzyka</h2>
+        <p>Słuchaj najnowszych utworów i odkrywaj nasze albumy na ulubionych platformach streamingowych.</p>
+        <ul>
+            <li><a href="#">Spotify</a></li>
+            <li><a href="#">Apple Music</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </section>
+
+    <section id="concerts" class="concerts">
+        <h2>Koncerty</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Miasto</th>
+                    <th>Lokalizacja</th>
+                    <th>Bilety</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>25.01.2024</td>
+                    <td>Warszawa</td>
+                    <td>Klub Proxima</td>
+                    <td><a href="#">Kup bilet</a></td>
+                </tr>
+                <tr>
+                    <td>10.02.2024</td>
+                    <td>Kraków</td>
+                    <td>Tauron Arena</td>
+                    <td><a href="#">Kup bilet</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Galeria</h2>
+        <p>Wkrótce znajdziesz tu zdjęcia z naszych występów!</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Kontakt</h2>
+        <p>Masz pytania? Skontaktuj się z naszym managerem:</p>
+        <ul>
+            <li><strong>Manager:</strong> Jan Kowalski</li>
+            <li><strong>Telefon:</strong> +48 123 456 789</li>
+            <li><strong>Email:</strong> manager@baranovski.pl</li>
+        </ul>
+        <form>
+            <label for="name">Imię i nazwisko:</label><br>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="message">Wiadomość:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+
+            <button type="submit">Wyślij</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Baranovski. Wszelkie prawa zastrzeżone.</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">TikTok</a></li>
+            <li><a href="#">YouTube</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
