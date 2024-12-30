@@ -11,14 +11,44 @@
             padding: 0;
         }
         header {
-            background: linear-gradient(to bottom, #d1e8f2, #f7d9c4);
-            color: #0f3d3e;
-            text-align: center;
-            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            height: 400px;
+            overflow: hidden;
         }
-        header img {
-            max-width: 100px;
-            border-radius: 50%;
+        .background-left {
+            flex: 1;
+            background: url('assets/left-bg.png') repeat-x;
+            height: 100%;
+        }
+        .artist-photo {
+            flex: 0 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+        .artist-photo img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .background-right {
+            flex: 1;
+            background: url('assets/right-bg.png') repeat-x;
+            height: 100%;
+        }
+        .header-title {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #0f3d3e;
+            z-index: 20;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
         }
         nav {
             background-color: #0f3d3e;
@@ -89,7 +119,12 @@
 </head>
 <body>
     <header>
-        <h1>Baranovski</h1>
+        <div class="background-left"></div>
+        <h1 class="header-title">Baranovski</h1>
+        <div class="artist-photo">
+            <img src="assets/photo.png" alt="Zdjęcie zespołu">
+        </div>
+        <div class="background-right"></div>
     </header>
 
     <nav>
