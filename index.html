@@ -24,6 +24,7 @@
             flex: 1;
             background: url('assets/left-bg.png') repeat-x;
             height: 100%;
+            padding-right: 400px
         }
         .artist-photo {
             flex: 0 0 auto;
@@ -44,15 +45,12 @@
             left: 50%;
             transform: translateX(-50%);
         }
-        .header-title div {
+        .header-title img {
             color: #1b3537;
-            z-index: 20;
-            text-align: center;
-            font-size: 2.5rem;
-            top: -2.5rem;
-            font-weight: bold;
+            width: 400px;
             position: relative;
-            left: -300px;
+            left: -150px;
+            top: -50px;
             font-family: "Josefin Sans", serif;
             font-optical-sizing: auto;
             font-weight: bold;
@@ -128,7 +126,10 @@
 <body>
     <header>
         <div class="background-left"></div>
-        <h1 class="header-title"><div>BARANOVSKI</div></h1>
+        <h1 class="header-title">
+            <!-- <div>BARANOVSKI</div> -->
+            <img src="assets/logo.png" >
+        </h1>
         <div class="artist-photo">
             <img src="assets/photo.png" alt="Zdjęcie zespołu">
         </div>
